@@ -1,28 +1,28 @@
-// // spread operator
+// spread operator
 
-// // const hobbies = ["Sports", "Cooking"]
+// const hobbies = ["Sports", "Cooking"]
 
-// // const activeHobbies = ["Hiking"]
+// const activeHobbies = ["Hiking"]
 
-// // activeHobbies.push(...hobbies)
+// activeHobbies.push(...hobbies)
 
-// // const person = {
-// //     name: "Tosin", 
-// //     age: 30
-// // }
-
-// // const copiedPerson = { ...person }
-
-// const add = (...numbers: number[]) => {
-
-//     return numbers.reduce((currentResult, currentValue) => {
-//         return currentResult + currentValue
-//     }, 0)
+// const person = {
+//     name: "Tosin", 
+//     age: 30
 // }
 
-// const addNumbers = add(4, 5, 6, 6)
+// const copiedPerson = { ...person }
 
-// console.log(addNumbers)
+const add = (...numbers: number[]) => {
+
+    return numbers.reduce((currentResult, currentValue) => {
+        return currentResult + currentValue
+    }, 0)
+}
+
+const addNumbers = add(4, 5, 6, 6)
+
+console.log(addNumbers)
 
 
 
