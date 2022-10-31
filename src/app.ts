@@ -1,22 +1,17 @@
-//typescript interfaces
-// an interface in typescript describes the structure of an object
+// typescript Type casting
+// const userInputElement = <HTMLInputElement>document.getElementById("user-input")!
 
-interface Person {
-    name: string;
-    age: number;
+// const userInputElement = document.getElementById("user-input")! as HTMLInputElement;
 
-    greet(phrase: string): void;
+// userInputElement.value = "Hi there"
+
+
+//alternatively
+const userInputElement = document.getElementById("user-input");
+
+if(userInputElement){
+    (userInputElement as HTMLInputElement).value = "Hi there"
 }
 
 
-let user1: Person ;
 
-
-user1 = {
-    name: "Tosin",
-    age: 24, 
-    greet(phrase: string){
-        console.log(`${phrase} ${this.name} ${this.age}`)
-    }
-}
-user1.greet("hello there")
