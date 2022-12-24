@@ -10,6 +10,19 @@ type Employee = {
     startDate: Date
 }
 
+// using interfaces 
+// interface Admin {
+//     name: string;
+//     privileges: string[]
+// }
+
+// interface Employee {
+//     name: string;
+//     startDate: Date
+// }
+
+// interface ElevevatedEmployee extends Admin, Employee {}
+
 type ElevatedEmployee = Admin & Employee
 
 
@@ -18,6 +31,7 @@ const e1: ElevatedEmployee = {
     privileges: ["create-server"], 
     startDate: new Date()
 }
+
 
 type Combinable = string | number;
 type Numeric = number | boolean
@@ -47,6 +61,8 @@ function printEmployeeInformation(emp: UnknownEmployee){
 
 printEmployeeInformation(e1)
 
+
+// discrminated unioins
 // instance of type guard
 
 class Car {
